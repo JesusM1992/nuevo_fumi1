@@ -1,0 +1,218 @@
+header .bloque-izquierda{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}
+header .container{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;}
+header {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ffffffc7; /* Color de fondo del menú */
+    box-shadow: 0px 2px 4px rgba(63, 1, 1, 0.521); /* Sombra opcional */
+    z-index: 1000; /* Asegura que el menú esté por encima de otros elementos */
+  }
+
+ul {list-style: none;padding: 0;margin: 0;}
+li {display: inline-block;position: relative;}
+a {
+	display: block;
+	color: #790202;
+	text-decoration: none;
+	padding: 0px 16px 0px 16px;
+	text-align: justify;
+	font-size: 18px;
+  }
+  .titulo {
+    text-align: center; /* Centra el contenido horizontalmente */
+    padding: 10px; /* Añade espacio alrededor del título */
+    margin: 10px auto; /* Establece un margen para separarlo de otras secciones */
+    max-width: 300px; /* Limita el ancho máximo */
+  }
+  .submenu {
+	display: none;
+	position: absolute;
+	padding: 0;
+  }
+  li:hover .submenu {
+	display: block;
+  }
+  .submenu li {
+	display: block;
+  }
+  .submenu a {
+	padding: 8px 15px;
+    color:#080808;
+  }
+  .submenu a:hover {
+	background-color: #dbd8d860;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente los elementos del menú */
+    align-items: center; /* Centra verticalmente los elementos del menú */
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+	display: inline-block;
+	position: relative;
+	line-height: 50px; /* Ajusta la altura para bajar o subir el texto */
+  }
+  
+  nav ul li a {
+	display: block;
+	text-decoration: none;
+	padding: 10px 15px;
+	line-height: 20px; /* Ajusta la altura para bajar o subir el texto */
+  color: #0d0274ef;
+  }
+  
+  nav ul ul {
+	display: none;
+	position: absolute;
+	padding: 0;
+	top: 100%; /* Asegura que los submenús aparezcan debajo de los elementos principales */
+  }
+  
+  nav ul ul li {
+	display: block;
+	line-height: 0; /* Ajusta la altura para bajar o subir el texto */
+  }
+  
+  nav ul ul a {
+	padding: 8px 15px;
+	line-height: 20px; /* Ajusta la altura para bajar o subir el texto */
+    color: #080808;
+  }
+  
+  nav ul li:hover > ul {
+	display: block;
+  }
+  footer a{
+  font-size: 14px;
+  color: #080808;
+ }
+ .barra-footer{
+    text-align: center;
+    background-color: black;
+    font-size: 10px;
+    padding: 10px;
+    color: white;
+  }
+  footer {
+  background-color: black;
+	font-size: 14px;
+  color: white;
+   }
+
+.columna.columna-25{
+  background-color: black;
+  color: white;
+  font-size: 12px;
+}
+ body {
+	margin: 0;
+	padding: 0;
+	width: 100%; /* Tamaño del cuerpo al 100% del viewport */
+	height: 100%; /* Altura del cuerpo al 100% del viewport */
+  }
+
+  .products {
+    display: grid;
+    grid-template-columns: repeat(
+       auto-fit,
+       minmax(150px , 1fr)
+    );
+    gap:32px;
+  }
+  .products .product {
+    width: 18%;
+    margin-bottom: 18px;
+    padding: 10px;
+
+  }
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: -15px;
+    padding-right: -15px;
+  }
+  .productos {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 20px;
+	max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .producto {
+    background-color: rgba(43, 43, 43, 0.041);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s ease; /* Transición suave para el efecto */
+    text-align: center;
+  }
+  
+  .producto:hover {
+    box-shadow: 0px 0px 10px 0px #007bff91; /* Sombra al pasar el mouse */
+  }
+  
+  .producto img {
+	width: 85%;
+	height: auto;
+	border-radius: 8px;
+	margin-bottom: 10px;
+  }
+  
+  .producto h2 {
+	font-size: 1.5rem;
+	margin-bottom: 5px;
+  }
+  
+  .producto p {
+	margin-bottom: 10px;
+  }
+  
+  .producto button {
+	padding: 8px 16px;
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+  }
+  
+  .producto button:hover {
+	background-color: #0056b3;
+  }
+
+  .imagenes {
+    display: flex;
+ 
+    align-items: center; /* Centra el contenido verticalmente */
+    height: 100vh; /* Ajusta la altura según sea necesario */
+    width: 100%;
+  }
+  
+  .container {
+    display: flex; /* Utiliza flexbox */
+    width: 100%; /* Ocupa el ancho completo de la sección */
+    max-width: 100%; /* Ajusta el tamaño máximo al 100% del contenedor principal */
+  }
+  
+  .container img {
+    width: 50%; /* Cada imagen ocupa la mitad del contenedor */
+    height: auto; /* Mantiene la relación de aspecto */
+    display: block; /* Elimina cualquier espacio en blanco que pueda aparecer */
+  }
+  
+  
+  
+
+ 
+  
+  
